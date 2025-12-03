@@ -3,60 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrición Post-Entreno: Guía completa para recuperar</title>
-    <meta name="description" content="Descubre qué comer después de entrenar. Guía de nutrición post-entreno con recetas saludables y consejos de recuperación muscular.">
-    <meta name="keywords" content="comida post entreno, nutrición deportiva, recetas fitness, recuperación muscular">
-    <meta name="subject" content="Nutrición Deportiva">
-    <meta name="copyright" content="Tu Nombre">
-    <meta name="language" content="ES">
-    <meta name="author" content="Tu Nombre">
+    <title>Nutrición Post-Entreno | Recupera y Crece</title>
+    <meta name="description" content="Guía definitiva de nutrición post-entreno. Recetas y consejos para hipertrofia y recuperación.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://asierchicharrogarcia.github.io/AsierChicharro.github.io/index.html" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     
-    <style>
-        /* CSS Básico para Responsive y Rendimiento [cite: 147] */
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
-        nav { background: #333; padding: 10px; }
-        nav a { color: white; margin-right: 15px; text-decoration: none; }
-        .container { max-width: 800px; margin: auto; }
-        img { max-width: 100%; height: auto; } /* Hace las imágenes responsive */
-    </style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Nutrición Post-Entreno",
-      "url": "https://asierchicharrogarcia.github.io/AsierChicharro.github.io/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://asierchicharrogarcia.github.io/AsierChicharro.github.io/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "url": "https://asierchicharrogarcia.github.io/AsierChicharro.github.io/"
     }
     </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="recetas/recetas.html">Recetas Post-Entreno</a>
+
+    <nav id="navbar">
+        <div class="logo">Fit<span class="highlight">Fuel</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#beneficios">Por qué importa</a></li>
+            <li><a href="recetas/recetas.html" class="btn-nav">Ver Recetas</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>Bienvenido a tu Guía de Nutrición Post-Entreno</h1>
-        <p>Si siempre comes después de entrenar, este es tu lugar. Aprende a optimizar tu recuperación.</p>
-        
-        <h2>Últimas Recetas</h2>
-        <ul>
-            <li><a href="recetas/batido-proteinas.html">El Batido Definitivo</a></li>
-        </ul>
-    </div>
+    <header id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Optimiza tu esfuerzo</span>
+            <h1>No desperdicies tu <br>Entrenamiento</h1>
+            <p>La guía definitiva para saber qué comer después del gimnasio. Recuperación muscular, energía y sabor.</p>
+            <div class="cta-group">
+                <a href="recetas/recetas.html" class="btn-primary">Ver Recetas</a>
+                <a href="#beneficios" class="btn-secondary">Saber más</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="beneficios" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">¿Por qué comer post-entreno?</h2>
+            <div class="grid-3">
+                <div class="card-feature reveal">
+                    <div class="icon">⚡</div>
+                    <h3>Reponer Glucógeno</h3>
+                    <p>Recupera la energía gastada durante la sesión para no sentirte agotado.</p>
+                </div>
+                <div class="card-feature reveal">
+                    <div class="icon">💪</div>
+                    <h3>Reparación Muscular</h3>
+                    <p>La proteína ayuda a reparar las micro-roturas de las fibras musculares.</p>
+                </div>
+                <div class="card-feature reveal">
+                    <div class="icon">🚀</div>
+                    <h3>Ventana Anabólica</h3>
+                    <p>Aprovecha el momento donde tu cuerpo absorbe mejor los nutrientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recetas-destacadas" class="section-gray section-padding">
+        <div class="container">
+            <div class="header-flex">
+                <h2 class="section-title">Últimas Recetas</h2>
+                <a href="recetas/recetas.html" class="link-arrow">Ver todas las recetas →</a>
+            </div>
+            
+            <div class="grid-recipes">
+                <article class="card-recipe reveal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1543362906-ac1b96426361?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Batido de Proteína">
+                        <span class="tag">5 Min</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>El Batido Definitivo</h3>
+                        <p>Plátano, proteína whey y leche. Simple y efectivo.</p>
+                        <a href="recetas/batido-proteinas.html" class="btn-card">Leer receta</a>
+                    </div>
+                </article>
+
+                <article class="card-recipe reveal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bowl de Avena">
+                        <span class="tag">10 Min</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bowl de Avena y Fruta</h3>
+                        <p>Carbohidratos complejos para una recuperación sostenida.</p>
+                        <a href="recetas/recetas.html" class="btn-card">Leer receta</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 FitFuel Project. Optimizado para Google Search Console.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
