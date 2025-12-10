@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://asierchicharrogarcia.github.io/AsierChicharro.github.io/
+sitemap.xml
