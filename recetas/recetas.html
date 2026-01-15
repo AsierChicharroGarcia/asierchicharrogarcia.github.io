@@ -22,50 +22,61 @@
     }
     </script>
 </head>
-<body>
 
-    <nav id="navbar" style="background: var(--dark);">
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+
+    <nav id="navbar" style="background: var(--dark); width: 100%;">
         <div class="logo">Fit<span class="highlight">Fuel</span></div>
         <ul class="nav-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="#" class="highlight">Recetas</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
     </nav>
 
-    <div class="container section-padding">
-        <nav style="margin-bottom: 20px;">
-            <a href="../index.html">Inicio</a> > Recetas
-        </nav>
+    <main style="flex: 1; width: 100%;">
+        <div class="container section-padding">
+            
+            <nav style="margin-bottom: 20px; color: #666; font-size: 0.9rem;">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Inicio</a> > <strong>Recetas</strong>
+            </nav>
 
-        <h1 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem;">Recetas para recuperar</h1>
+            <h1 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--dark);">Recetas para recuperar</h1>
 
-        <div class="grid-recipes">
-            <article class="card-recipe">
-                <div class="card-image">
-                    <img src="https://iswari.s3.eu-west-3.amazonaws.com/blog/rudjzu-.jpg" alt="Batido">
-                    <span class="tag">5 Min</span>
-                </div>
-                <div class="card-info">
-                    <h3>Batido de Plátano y Proteína</h3>
-                    <p>La opción más rápida y efectiva tras el gimnasio.</p>
-                    <a href="batido-proteinas.html" class="btn-card">Ver receta →</a>
-                </div>
-            </article>
+            <div class="grid-recipes">
+                <article class="card-recipe">
+                    <div class="card-image">
+                        <img src="https://iswari.s3.eu-west-3.amazonaws.com/blog/rudjzu-.jpg" alt="Batido">
+                        <span class="tag">5 Min</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Batido de Plátano y Proteína</h3>
+                        <p>La opción más rápida y efectiva tras el gimnasio.</p>
+                        <a href="batido-proteinas.html" class="btn-card">Ver receta →</a>
+                    </div>
+                </article>
 
-            <article class="card-recipe">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bowl">
-                    <span class="tag">15 Min</span>
-                </div>
-                <div class="card-info">
-                    <h3>Bowl de Avena, Huevo y Aguacate</h3>
-                    <p>Para cuando necesitas una comida sólida y completa.</p>
-                    <a href="bowl-avena.html" class="btn-card">Ver receta →</a>
-                </div>
-            </article>
+                <article class="card-recipe">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bowl">
+                        <span class="tag">15 Min</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bowl de Avena, Huevo y Aguacate</h3>
+                        <p>Para cuando necesitas una comida sólida y completa.</p>
+                        <a href="bowl-avena.html" class="btn-card">Ver receta →</a>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
-    <footer><p>© 2025 FitFuel Project.</p></footer>
+    </main>
+
+    <footer style="background: var(--dark); color: white; padding: 20px; text-align: center; width: 100%;">
+        <p>© 2025 FitFuel Project.</p>
+    </footer>
+
     <script src="../script.js"></script>
 </body>
 </html>
